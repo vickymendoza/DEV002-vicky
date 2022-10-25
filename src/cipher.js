@@ -1,5 +1,8 @@
-const cipher = {
-  // ...
-};
+//const cipher = {
+//return ("Hols");
+//};
+//export default cipher;
 
-export default cipher;
+function cipher (textoAEncriptar) {
+console.log(textoAEncriptar);
+}

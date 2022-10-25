@@ -1,3 +1,7 @@
-import cipher from './cipher.js';
+//import cipher from 'cipher.js';
 
-console.log(cipher);
+ function encriptar() {
+    // console.log(cipher); 
+    let textoIngresado = document.getElementById("myText").value
+    console.log(textoIngresado);
+  }
