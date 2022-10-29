@@ -1,26 +1,31 @@
-    <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
     <title>Tu Contraseña Segura</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>       
-    
+
+  <body>
     <script src="index.js"></script>
-    <h1> TU CONTRASEÑA SEGURA</h1>
-    <h2> Nos complaces que uses nuestro servicio</h2>
+    <h1>TU CONTRASEÑA SEGURA</h1>
+    <h2>Nos complaces que uses nuestro servicio</h2>
     <label>Escribe el texto a encriptar:</label>
-    <br>
-    <input type="text" id="myText">
-    <br>
-    <button onclick="encriptar()">Encriptar</button>
+    <br />
+    <div class="ppalcontenedor">
+      <input type="text" id="myText" />
+      <button class="button button1" onclick="encriptar()">Encriptar</button>
+      <button class="button button2" onclick="desencriptar()">
+        Desencriptar
+      </button>
+    </div>
 
-    <p> Este es un espacio dónde puedes darle a tus datos la oportunidad de no ser descifrados por personas malintencionadas que quieran acceder a tus cuentas e información y violar tu privacidad. </p>
+    <p>
+      Este es un espacio dónde puedes darle a tus datos la oportunidad de no ser
+      descifrados por personas malintencionadas que quieran acceder a tus
+      cuentas e información y violar tu privacidad.
+    </p>
 
-    <img src="seguridad.WEBP">
-    
-    
+    <img src="assets/seguridad.jpg" alt="seguridad" width="400" height="300" />
   </body>
-<//html>
-
+</html>
