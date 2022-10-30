@@ -1,12 +1,13 @@
-/*
-body {
-  background-color: rgb(168, 170, 222);
-}
+
 
 h1 {
-  color: rgb(199, 55, 76); text-align: center; font-family: verdana;    
+   text-align: center; font-family: verdana;    
 }
+/*
 
+body {
+  background-color: rgb(247, 247, 250);
+}
 h2 {
  color: rgb(77, 67, 68); text-align: center; font-family: verdana;
 }
@@ -35,4 +36,15 @@ p {
 .button:hover {
   background-color: #e7e7e7; 
   color: black;
+}
+
+
+.entrada {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
