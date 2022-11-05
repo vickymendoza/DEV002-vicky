@@ -7,36 +7,39 @@
   </head>
 
   <body>
-    <script src="index.js"></script>
     <h1>TU CONTRASEÑA SEGURA</h1>
-    <h2>Nos complaces que uses nuestro servicio</h2>
 
-    <br />
-    <div>
-      <label>Elige un número para hacer la magia:</label>
-      <input class="entrada" type="number" id="casillas" min="0" /><br />
-      <label>Escribe el texto a encriptar:</label>
-      <input class="entrada" type="text" id="entrada" />
-
-      <button class="button button1" onclick="encriptar()">Encriptar</button>
-
-      <button class="button button2" onclick="desencriptar()">
-        Desencriptar
-      </button>
-
-      <br />
-      <br />
-
-      <label id="resultado"></label>
-    </div>
-    <br />
-    <br />
-    <p>
+    <h2>
       Este es un espacio dónde puedes darle a tus datos la oportunidad de no ser
       descifrados por personas malintencionadas que quieran acceder a tus
       cuentas e información y violar tu privacidad.
-    </p>
+    </h2>
+    <br />
+    <div>
+      <h4>Elige un número para hacer la magia:</h4>
+      <input
+        class="entrada"
+        type="number"
+        id="casillas"
+        min="0"
+        max="100"
+      /><br />
+      <h4>Escribe el texto a encriptar:</h4>
+      <input class="entrada" type="text" id="entrada" /><br />
 
-    <img src="assets/seguridad.jpg" alt="seguridad" width="400" height="300" />
+      <button id="btnencriptar" class="button button1">Encriptar</button>
+      <button id="btndesencriptar" class="button button2">Desencriptar</button>
+
+      <br />
+      <br />
+
+      <label id="resultado"></label><br />
+      <h2>Nos complaces que uses nuestro servicio</h2>
+    </div>
+    <br />
+    <br />
+
+    <img src="assets/seguridad.jpg" alt="seguridad" width="0" height="0" />
+    <script src="index.js" type="module"></script>
   </body>
 </html>
