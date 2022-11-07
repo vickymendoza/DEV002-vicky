@@ -32,7 +32,7 @@ const cipher = {
   encode(letrasAAvanzar, textoViejo) {
     // valido que el # de letras a avanzar sea de tipo número y sino arroja un error
     //"personaliza" un error
-    if (typeof letrasAAvanzar != "number") {
+    if (isNaN(letrasAAvanzar)) {
       throw new TypeError("Desplazamiento", "cipher.js", 35);
     }
 
@@ -86,12 +86,12 @@ const cipher = {
   },
 
   decode(letrasAAvanzar, textoViejo) {
-    if (typeof letrasAAvanzar != "number") {
-      throw new TypeError("Desplazamiento", "cipher.js", 70);
+    if (isNaN(letrasAAvanzar)) {
+      throw new TypeError("Desplazamiento", "cipher.js", 89);
     }
 
     if (typeof textoViejo != "string") {
-      throw new TypeError("clave", "cipher.js", 74);
+      throw new TypeError("clave", "cipher.js", 93);
     }
 
     let textoNuevo = "";
