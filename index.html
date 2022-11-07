@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tu Contraseña Segura</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>TU CONTRASEÑA SEGURA</h1>
+
+    <h2>
+      Este es un espacio dónde puedes darle a tus datos la oportunidad de no ser
+      descifrados por personas malintencionadas que quieran acceder a tus
+      cuentas e información y violar tu privacidad.
+    </h2>
+    <br />
+    <div>
+      <h4>Elige un número para hacer la magia:</h4>
+      <input
+        class="entrada"
+        type="number"
+        id="casillas"
+        min="0"
+        max="100"
+      /><br />
+      <h4>Escribe el texto a encriptar:</h4>
+      <input class="entrada" type="text" id="entrada" /><br />
+
+      <button id="btnencriptar" class="button button1">Encriptar</button>
+      <button id="btndesencriptar" class="button button2">Desencriptar</button>
+
+      <br />
+      <br />
+
+      <label id="resultado"></label><br />
+      <h2>Nos complaces que uses nuestro servicio</h2>
+    </div>
+    <br />
+    <br />
+
+    <img src="assets/seguridad.jpg" alt="seguridad" width="0" height="0" />
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
