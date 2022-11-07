@@ -1,5 +1,5 @@
 const cipher = {
-  //VARIABLE CON LAS LETRAS VALIDAS
+  //REMPLAZO DE LETRAS, Creé el arreglo a recorrer
   letrasValidas: [
     "A",
     "B",
@@ -30,6 +30,14 @@ const cipher = {
   ],
 
   encode(letrasAAvanzar, textoViejo) {
+    if (typeof letrasAAvanzar != "number") {
+      throw new TypeError("Desplazamiento", "cipher.js", 34);
+    }
+
+    if (typeof textoViejo != "string") {
+      throw new TypeError("clave", "cipher.js", 37);
+    }
+
     let textoNuevo = "";
     let largoLetrasValidas = this.letrasValidas.length;
     letrasAAvanzar =
@@ -59,7 +67,13 @@ const cipher = {
   },
 
   decode(letrasAAvanzar, textoViejo) {
-    console.log(textoViejo);
+    if (typeof letrasAAvanzar != "number") {
+      throw new TypeError("Desplazamiento", "cipher.js", 70);
+    }
+
+    if (typeof textoViejo != "string") {
+      throw new TypeError("clave", "cipher.js", 74);
+    }
 
     let textoNuevo = "";
     let largoLetrasValidas = this.letrasValidas.length;
@@ -82,19 +96,8 @@ const cipher = {
         textoNuevo = textoNuevo + letraVieja;
       } else {
         indiceLetraNueva =
-          (indiceLetraVieja - letrasAAvanzar) % largoLetrasValidas;
-
-        console.log(
-          i +
-            "-" +
-            letraVieja +
-            " - ESTE " +
-            indiceLetraVieja +
-            " - MENOS " +
-            letrasAAvanzar +
-            " - " +
-            indiceLetraNueva
-        );
+          (indiceLetraVieja - letrasAAvanzar + largoLetrasValidas) %
+          largoLetrasValidas;
 
         letraNueva = this.letrasValidas[indiceLetraNueva];
         textoNuevo = textoNuevo + letraNueva;

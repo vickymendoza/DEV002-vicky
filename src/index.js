@@ -5,6 +5,7 @@ function encriptar() {
     document.getElementById("casillas").value,
     document.getElementById("entrada").value
   );
+
   document.getElementById("resultado").innerHTML =
     "tu nueva contraseña segura es: " + textoNuevo;
 }
